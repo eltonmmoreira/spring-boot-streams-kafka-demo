@@ -4,7 +4,7 @@ Clone o repositório:
 <pre><code> https://github.com/eltonmmoreira/spring-boot-streams-kafka-demo.git</code></pre>
 
 # Description:
-<pre><code>APIs e serviços construídos para demo, utilizando spring boot, spring boot streams e kafka.
+APIs e serviços construídos para demo, utilizando spring boot, spring boot streams e kafka.
 Os serviços se comunicam entre si através de tópicos kafka, enviado e recebendo mensagens conforme eventos 
 e ações realizadas.
 No order-api através de chamada rest é incluido um cliente e então uma ordem para esse cliente, 
@@ -13,14 +13,13 @@ Após processar o pagamento um evento é disparado, então o mail-api recebe os 
 envia um e-mail para o cliente da ordem(processamento do pagamento e envio de e-mail é realizado de 
 maneira simbólica, somente para dar sequencia ao fluxo)
 
-Tecnologias
+Tecnologias:
 - Spring Boot,
 - JAVA, 
 - REST, 
 - Kafka, 
 - Spring Boot Streams, 
 - Docker
-</code></pre>
 
 # Building and running the application
 ## Pre-requisites
