@@ -45,8 +45,8 @@ Execute o seguinte comando na raiz do projeto:
 # Documentation
 <pre><code>http://localhost:8080/api-docs
 http://localhost:8080/swagger-ui.html
-http://localhost:8080/api-docs
-http://localhost:8080/swagger-ui.html
+http://localhost:8081/api-docs
+http://localhost:8081/swagger-ui.html
 
 Para listar os tópicos e ver as mensagens enviadas ao kafka, foi incluido no docker compose o Kafdrop, 
 disponível por padrão na porta 19000, para verificar as informações acesse:
