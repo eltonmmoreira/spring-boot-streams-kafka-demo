@@ -1,10 +1,26 @@
-# spring-boot-streams-kafka-demo
+# Spring Boot Kafka Streams demo application
 # Getting Started
 Clone o repositório:
 <pre><code> https://github.com/eltonmmoreira/spring-boot-streams-kafka-demo.git</code></pre>
 
-# Tecnologias:
-<pre><code> Spring Boot, JAVA, REST, Kafka, Spring Boot Streams, Docker</code></pre>
+# Description:
+<pre><code>APIs e serviços construídos para demo, utilizando spring boot, spring boot streams e kafka.
+Os serviços se comunicam entre si através de tópicos kafka, enviado e recebendo mensagens conforme eventos 
+e ações realizadas.
+No order-api através de chamada rest é incluido um cliente e então uma ordem para esse cliente, 
+ao criar a ordem um evento é disparado e o payment-api recebe essa ordem e valida o pagamento.
+Após processar o pagamento um evento é disparado, então o mail-api recebe os dados e 
+envia um e-mail para o cliente da ordem(processamento do pagamento e envio de e-mail é realizado de 
+maneira simbólica, somente para dar sequencia ao fluxo)
+
+Tecnologias
+- Spring Boot,
+- JAVA, 
+- REST, 
+- Kafka, 
+- Spring Boot Streams, 
+- Docker
+</code></pre>
 
 # Building and running the application
 ## Pre-requisites
@@ -37,13 +53,3 @@ Para listar os tópicos e ver as mensagens enviadas ao kafka, foi incluido no do
 disponível por padrão na porta 19000, para verificar as informações acesse:
 http://localhost:19000/</code></pre>
 
-# Application
-<pre><code>APIs e serviços construídos para demo, utilizando spring boot, spring boot streams e kafka.
-Os serviços se comunicam entre si através de tópicos kafka, enviado e recebendo mensagens conforme eventos 
-e ações realizadas.
-No order-api através de chamada rest é incluido um cliente e então uma ordem para esse cliente, 
-ao criar a ordem um evento é disparado e o payment-api recebe essa ordem e valida o pagamento.
-Após processar o pagamento um evento é disparado, então o mail-api recebe os dados e 
-envia um e-mail para o cliente da ordem(processamento do pagamento e envio de e-mail é realizado de 
-maneira simbólica, somente para dar sequencia ao fluxo)
-</code></pre>
