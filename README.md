@@ -3,7 +3,7 @@
 Clone o repositório:
 <pre><code> https://github.com/eltonmmoreira/spring-boot-streams-kafka-demo.git</code></pre>
 
-# Description:
+# Description
 APIs e serviços construídos para demo, utilizando spring boot, spring boot streams e kafka.
 Os serviços se comunicam entre si através de tópicos kafka, enviado e recebendo mensagens conforme eventos 
 e ações realizadas.
