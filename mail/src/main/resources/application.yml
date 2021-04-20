@@ -1,0 +1,14 @@
+server:
+  port: 8082
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          autoCreateTopics: true
+          brokers: localhost:9092
+      bindings:
+        consumer-in-0:
+          destination: streaming.payment.accept
+    application:
+      name: mail-api
